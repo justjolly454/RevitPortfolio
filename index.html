@@ -220,7 +220,7 @@
       color: #fff;
     }
 
-    .filter-btn[data-filter="Revit Add-ins"].active   { background: var(--tag-revit); border-color: var(--tag-revit); }
+    .filter-btn[data-filter="Revit Plugins"].active   { background: var(--tag-revit); border-color: var(--tag-revit); }
     .filter-btn[data-filter="Excel Macros"].active    { background: var(--tag-excel); border-color: var(--tag-excel); }
     .filter-btn[data-filter="Dynamo Scripts"].active  { background: var(--tag-dynamo); border-color: var(--tag-dynamo); }
     .filter-btn[data-filter="Plant 3D"].active        { background: var(--tag-plant); border-color: var(--tag-plant); }
@@ -528,8 +528,9 @@
   <!-- HEADER -->
   <header>
     <div class="header-inner">
-      <h1>Software Automation Portfolio<br><em>Justin Jolly</em></h1>
-      <p class="header-sub">A collection of automation tools, scripts, and macros built using Copilot to eliminate repetitive workflows and save real hours across the team.</p>
+      <h1>Internal Workflow Automation Portfolio<br><em>Justin Jolly</em></h1>
+      <p class="header-sub">A personal showcase of how I identify recurring workflow problems and use Copilot to improve productivity and consistency.<br><br>
+	  My Role: Problem Identifier → Workflow Designer → Solution Validator</p>
     </div>
   </header>
 
@@ -537,7 +538,7 @@
   <div class="stats-wrap">
     <div class="stats-inner">
       <div class="stat-item">
-        <span class="stat-num">2</span>
+        <span class="stat-num">5</span>
         <span class="stat-desc">Tools Created</span>
       </div>
       <div class="stat-item">
@@ -575,7 +576,7 @@
       <div class="filter-buttons">
         <button class="filter-btn active" data-filter="All">All</button>
 		<button class="filter-btn" data-filter="Revit Macros">Revit Macros</button>
-        <button class="filter-btn" data-filter="Revit Add-ins">Revit Add-ins</button>
+        <button class="filter-btn" data-filter="Revit Plugins">Revit Plugins</button>
         <button class="filter-btn" data-filter="Dynamo Scripts">Dynamo Scripts</button>
         <button class="filter-btn" data-filter="Plant3D Action Recorder">Plant3D Action Recorder</button>
 		<button class="filter-btn" data-filter="Excel Macros">Excel Macros</button>
@@ -591,7 +592,7 @@
       <!--
         HOW TO ADD A TOOL:
         1. Copy one full <div class="tool-card"> block below
-        2. Update data-category to one of: "Revit Add-ins" | "Excel Macros" | "Dynamo Scripts" | "Plant 3D" | "Others"
+        2. Update data-category to one of: "Revit Plugins" | "Excel Macros" | "Dynamo Scripts" | "Plant 3D" | "Others"
         3. Update data-name with the tool name (used for search)
         4. Update all content inside
         5. For video embeds, replace the video-placeholder div with:
@@ -601,7 +602,7 @@
 		   🔄 Ongoing
       -->
 
-      <!-- ═══════════════════════════════════════════ TOOL 1 -->
+      <!-- ════ TOOL 1 ══════════════════════════════TOOL 1═════════ -->
       <div class="tool-card" data-category="Revit Macros" data-name="dimensioning tool">
         <div class="card-header" onclick="toggleCard(this)">
           <span class="card-number">01</span>
@@ -621,15 +622,15 @@
             <div class="section-label">Process Before This Tool</div>
             <p class="section-text">
               Following are the steps involved in the manual method:<br>
-				<b>Activate the Aligned Dimension Tool</b><br>
+				<b>1. Activate the Aligned Dimension Tool</b><br>
 				On the Annotate tab, select Aligned Dimension to begin placing dimensions.<br>
-				<b>Select the First Reference Point</b><br>
+				<b>2. Select the First Reference Point</b><br>
 				Click on the left endpoint of the valve to establish the first dimension reference.<br>
-				<b>Select the Second Reference Point</b><br>
+				<b>3. Select the Second Reference Point</b><br>
 				Click on the right endpoint of the valve to define the second reference.<br>
-				<b>Place the Dimension</b><br>
+				<b>4. Place the Dimension</b><br>
 				Move your cursor to the desired location and click to place the aligned dimension.<br>
-				<b>Repeat for Additional Valve Sizes</b><br>
+				<b>5. Repeat for Additional Valve Sizes</b><br>
 				Repeat Steps 2–4 for each remaining valve size that requires dimensioning.
             </p>
           </div>
@@ -674,7 +675,7 @@
             <div class="section-label">Implications &amp; Impact</div>
             <div class="implications">
               <div class="time-highlight">
-                ⏱ <strong>For ~350 instances, 25 minutes → 10 seconds</strong> &nbsp;·&nbsp; ~99% time reduction per project
+                ⏱ <strong>For ~350 instances, 25 minutes → 10 seconds</strong> &nbsp;&nbsp; ~99% time reduction per project
               </div>
               <div class="impact-row">
                 <span class="impact-icon">📈</span>
@@ -709,7 +710,7 @@
         </div>
       </div>
 
-      <!-- ═══════════════════════════════════════════ TOOL 2 -->
+      <!-- ════ TOOL 2 ══════════════════════════════TOOL 2═════════ -->
       <div class="tool-card" data-category="Revit Macros" data-name="saveas families">
         <div class="card-header" onclick="toggleCard(this)">
           <span class="card-number">02</span>
@@ -728,15 +729,15 @@
             <div class="section-label">Process Before This Tool</div>
             <p class="section-text">
 			Following are the steps involved in the manual method:<br>
-				<b>Open the Family for Editing</b><br>
+				<b>1. Open the Family for Editing</b><br>
 				Select the desired family instance within the Revit project (.rvt) and click Edit Family from the ribbon to enter the Family Editor environment.<br>
-				<b>Access the Save As Dialog</b><br>
+				<b>2. Access the Save As Dialog</b><br>
 				In the Family Editor, navigate to File and select Save As > Family to open the Save As dialog box.<br>
-				<b>Specify the Save Location</b><br>
+				<b>3. Specify the Save Location</b><br>
 				Browse to the desired destination folder where the family file (.rfa) is to be saved.<br>
-				<b>Retain the Family Name and Save</b><br>
+				<b>4. Retain the Family Name and Save</b><br>
 				Ensure the file name remains unchanged, then click Save to export the family as a standalone .rfa file.<br>
-				<b>Repeat for Additional Families</b><br>
+				<b>5. Repeat for Additional Families</b><br>
 				Return to the Revit project environment and repeat Steps 1 through 4 for each remaining family that needs to be saved individually.
 			</p>
           </div>
@@ -776,7 +777,7 @@
           <div class="section-block">
             <div class="section-label">Implications &amp; Impact</div>
             <div class="implications">
-              <div class="time-highlight">⏱ <strong>For ~50 families, 16 minutes → 10 seconds</strong> &nbsp;·&nbsp; ~97% time reduction</div>
+              <div class="time-highlight">⏱ <strong>For ~50 families, 16 minutes → 10 seconds</strong> &nbsp;&nbsp; ~97% time reduction</div>
               <div class="impact-row">
 			  <span class="impact-icon">📈</span>
 			  <span class="impact-label">Efficiency Gain</span>
@@ -809,102 +810,311 @@
         </div>
       </div>
 		
-      <!-- ═══════════════════════════════════════════ TOOL 3 - Excel --==
-      <div class="tool-card" data-category="Excel Macros" data-name="excel macro one">
+      <!-- ════ TOOL 3 ══════════════════════════════TOOL 3═════════ -->
+      <div class="tool-card" data-category="Revit Plugins" data-name="family configurator">
         <div class="card-header" onclick="toggleCard(this)">
           <span class="card-number">03</span>
           <div class="card-meta">
-            <div class="tool-title">Excel Macro One</div>
+            <div class="tool-title">Family Configurator</div>
             <div class="badges">
-              <span class="badge badge-excel">Excel Macro</span>
-              <span class="status-badge status-active">✅ Active</span>
+              <span class="badge badge-revit">Revit Plugins</span>
+              <span class="status-badge status-ongoing">🔄 Ongoing</span>
             </div>
-            <div class="tool-one-liner">One-line description of what this Excel macro automates</div>
+            <div class="tool-one-liner">This tool exposes the parameters of parametric families directly within the project environment — allowing users to configure and place custom family instances without ever leaving Revit.</div>
           </div>
           <span class="expand-icon">▼</span>
         </div>
         <div class="card-body">
           <div class="section-block">
             <div class="section-label">Process Before This Tool</div>
-            <p class="section-text">Describe the manual Excel data management task. What columns, sheets, formulas were involved? How long did it take?</p>
+            <p class="section-text">
+			Following are the steps involved in the traditional method:<br>
+				<b>1. Locate the Parametric Family</b><br>
+				Navigate to the shared library location and find the required parametric family file (.rfa).<br>
+				<b>2. Create a Local Copy</b><br>
+				Duplicate the file into a local folder and rename it to reflect the desired configuration — to avoid overwriting the original.<br>
+				<b>3. Load and Open Edit Type</b><br>
+				Load the renamed family into the Revit project, select a placed instance, and open the Edit Type dialog from the Properties panel.<br>
+				<b>4. Modify Parameters Manually</b><br>
+				Change the required parameter values within the Edit Type dialog to achieve the desired family configuration.<br>
+				<b>5. Cross-Reference the Drawing</b><br>
+				Keep the reference drawing open separately to identify which parameter corresponds to which dimension — switching back and forth throughout the process.
+			</p>
           </div>
           <div class="section-block">
-            <div class="section-label">Before &amp; After</div>
+            <div class="section-label">Tool Demo</div>
             <div class="video-grid">
 			
-			<!-- LEFT SIDE: MANUAL METHOD --==
-              <div class="video-block">
-                <div class="video-label before">⏱ Manual Method</div>
-                <div class="video-embed">
-					
-				<!-- ADDED VIDEO TAG BELOW --==
-					<video width="450" height ="450" controls>
-					<source src="videos/DimMM.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-                  
-                </div>
-              </div>
-			  
-			  <!-- RIGHT SIDE: AUTOMATED METHOD --==
+			<!-- LEFT SIDE: AUTOMATED METHOD -->
               <div class="video-block">
                 <div class="video-label after">⚡ Automated Method</div>
                 <div class="video-embed">
 					
-				<!-- ADDED VIDEO TAG BELOW --==
-					<video width="450" height ="450" controls>
-					<source src="videos/DimAM.mp4" type="video/mp4">
+				<!-- ADDED VIDEO TAG BELOW -->
+					<video width=100% height =100% controls>
+					<source src="videos/FamConf.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
                   
                 </div>
               </div>
+			 
             </div>
           </div>
           <div class="section-block">
             <div class="section-label">Implications &amp; Impact</div>
             <div class="implications">
-              <div class="time-highlight">⏱ <strong>X hours → Y minutes</strong> &nbsp;·&nbsp; ~Z% time reduction</div>
-              <div class="impact-row"><span class="impact-icon">📈</span><span class="impact-label">Efficiency Gain</span><span class="impact-value">Detail here</span></div>
-              <div class="impact-row"><span class="impact-icon">🎯</span><span class="impact-label">Error Reduction</span><span class="impact-value">Detail here</span></div>
-              <div class="impact-row"><span class="impact-icon">👥</span><span class="impact-label">Users &amp; Adoption</span><span class="impact-value">Detail here</span></div>
-              <div class="impact-row"><span class="impact-icon">💼</span><span class="impact-label">Business Value</span><span class="impact-value">Detail here</span></div>
-              <div class="impact-row"><span class="impact-icon">⚙️</span><span class="impact-label">Tech Used</span><span class="impact-value">Excel VBA, Custom Forms</span></div>
+              <div class="time-highlight">⏱ <strong>Multi-step external process → Single in-project workflow</strong> &nbsp;&nbsp; Significant reduction in configuration time and reference errors</div>
+              <div class="impact-row">
+			  <span class="impact-icon">📈</span>
+			  <span class="impact-label">Efficiency Gain</span>
+			  <span class="impact-value">Family selection, parameter editing, and instance placement all happen inside one interface — no file navigation, no local copies, no switching between windows.</span>
+			  </div>
+              <div class="impact-row">
+			  <span class="impact-icon">🎯</span>
+			  <span class="impact-label">Error Reduction</span>
+			  <span class="impact-value">The built-in reference drawing image eliminates the need to cross-reference external documents. Parameters are labelled in context — reducing the chance of editing the wrong value.</span>
+			  </div>
+			  <!--
+              <div class="impact-row">
+			  <span class="impact-icon">👥</span>
+			  <span class="impact-label">Users &amp; Adoption</span>
+			  <span class="impact-value">Detail here</span>
+			  </div>
+			  -->
+              <div class="impact-row">
+			  <span class="impact-icon">💼</span>
+			  <span class="impact-label">Business Value</span>
+			  <span class="impact-value">Faster family configuration directly accelerates content creation and modelling workflows.</span>
+			  </div>
+              <div class="impact-row">
+			  <span class="impact-icon">⚙️</span>
+			  <span class="impact-label">Tech Used</span>
+			  <span class="impact-value">Revit API, VB.NET, Copilot</span>
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>		
+ <!-- ════ TOOL 4 ══════════════════════════════TOOL 4═════════ -->
+      <div class="tool-card" data-category="Excel Macros" data-name="lookup generator">
+        <div class="card-header" onclick="toggleCard(this)">
+          <span class="card-number">04</span>
+          <div class="card-meta">
+            <div class="tool-title">Lookup Generator</div>
+            <div class="badges">
+              <span class="badge badge-excel">Excel Macros</span>
+              <span class="status-badge status-ongoing">🔄 Ongoing</span>
+            </div>
+            <div class="tool-one-liner">This tool extracts submittal data from a template Excel file and generates a Revit-ready lookup table (.CSV) automatically — eliminating manual data entry and transcription errors.</div>
+          </div>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="card-body">
+
+          <div class="section-block">
+            <div class="section-label">Process Before This Tool</div>
+            <p class="section-text">
+              Following are the steps involved in the manual method:<br>
+				<b>1. Locate an Existing Lookup Table</b><br>
+				Open an existing .CSV lookup table that closely matches the required format, to use as a reference for the correct header structure.<br>
+				<b>2. Match Headers Manually</b><br>
+				Compare the submittal data against the lookup table headers and manually rearrange or rename columns to align with Revit's expected format.<br>
+				<b>3. Enter Sizes and Corresponding Values</b><br>
+				Key in each size and its corresponding parameter values row by row, referencing the submittal document alongside the lookup table.<br>
+				<b>4. Save and Load into Revit</b><br>
+				Save the file as a .CSV and load it into Revit to verify the data is read correctly.<br>
+
+            </p>
+          </div>
+		  <div class="section-block">
+            <div class="section-label">Process After This Tool</div>
+            <p class="section-text">
+              Following are the steps involved in the automated method:<br>
+				<b>1. Get the data</b><br>
+				Open excel and extract the submittal data using Data >> Get Data >> From Other Sources >> From  Web<br>
+				<b>2. Format the extracted data</b><br>
+				Copy the extracted data to the macro enabled file Lookup Table Generator to format the unwanted data.<br>
+				<b>3. Match the headers </b><br>
+				 Formatted data need to have pre-requisite headers.<br>
+				<b>4. Run the macro - Lookup file ready!</b><br>
+				Run the Lookup Generator macro, give the file a path and a name. Your .csv  file is ready with required headers and metric values.<br>
+
+            </p>
+          </div>
+        
+          <div class="section-block">
+            <div class="section-label">Implications &amp; Impact</div>
+            <div class="implications">
+              <div class="time-highlight">
+                📝<strong>Manual entry errors → Near zero</strong>      <!--&nbsp;&nbsp; ~99% time reduction per project	  -->
+              </div>
+              <div class="impact-row">
+                <span class="impact-icon">📈</span>
+                <span class="impact-label">Efficiency Gain</span>
+                <span class="impact-value"> Extraction and formatting are handled by macros — the user only verifies, not re-types.</span>
+              </div>
+              <div class="impact-row">
+                <span class="impact-icon">🎯</span>
+                <span class="impact-label">Error Reduction</span>
+                <span class="impact-value">Eliminates transcription mistakes that occur when manually matching headers and entering values row by row. </span>
+              </div>
+              <!--
+			  <div class="impact-row">
+                <span class="impact-icon">👥</span>
+                <span class="impact-label">Users &amp; Adoption</span>
+                <span class="impact-value">How many people use this, how often</span>
+              </div>
+			  -->
+              <div class="impact-row">
+                <span class="impact-icon">💼</span>
+                <span class="impact-label">Business Value</span>
+                <span class="impact-value">Fewer errors at the content creation stage means fewer rework cycles downstream — saving time at every point the data is used.</span>
+              </div>
+              <div class="impact-row">
+                <span class="impact-icon">⚙️</span>
+                <span class="impact-label">Tech Used</span>
+                <span class="impact-value">Excel Macros, Copilot</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+		
+      <!-- ════ TOOL 5 ══════════════════════════════TOOL 5═════════ -->
+      <div class="tool-card" data-category="Excel Macros" data-name="weekly report generator">
+        <div class="card-header" onclick="toggleCard(this)">
+          <span class="card-number">05</span>
+          <div class="card-meta">
+            <div class="tool-title">Weekly Report Generator</div>
+            <div class="badges">
+              <span class="badge badge-excel">Excel Macro</span>
+              <span class="status-badge status-active">✅ Active</span>
+            </div>
+            <div class="tool-one-liner">This tool automatically compiles equipment creation requests across all projects into a formatted Word report — ready for the weekly manager meeting with just one macro run.</div>
+          </div>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="card-body">
+          <div class="section-block">
+            <div class="section-label">Process Before This Tool</div>
+            <p class="section-text">
+              Following are the steps involved in the manual method:<br>
+				<b>1. Pull Images from Project Files</b><br>
+				Open each project file individually and extract the images of completed equipment creation requests one by one.<br>
+				<b>2. Build the Word Document</b><br>
+				Create a new Word file and insert each image alongside its corresponding equipment name and project name manually.<br>
+				<b>3. Format for Readability</b><br>
+				Adjust layout, spacing, image sizes, and text formatting repeatedly to make the report compact and presentable.<br>
+				<b>4. Name the File</b><br>
+				Rename the final document to reflect the meeting date before sharing or presenting.<br>
+                <b>5. Repeat Every Week</b><br>
+                Rebuild the entire document from scratch the following week — same process, same effort.<br>
+
+            </p>
+          </div>
+          <div class="section-block">
+            <div class="section-label">Tool Demo</div>
+            <div class="video-grid">
+			
+			<!-- LEFT SIDE: AUTOMATED METHOD -->
+              <div class="video-block">
+                <div class="video-label after">⚡ Automated Method</div>
+                <div class="video-embed">
+					
+				<!-- ADDED VIDEO TAG BELOW -->
+					<video width=100% height =100% controls>
+					<source src="videos/WeeklyReport.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+                  
+                </div>
+              </div>
+			 
+            </div>
+          </div>
+          
+          <div class="section-block">
+            <div class="section-label">Implications &amp; Impact</div>
+            <div class="implications">
+              <div class="time-highlight">⏱ <strong>~1 hour → Under 5 minutes</strong> &nbsp;&nbsp; ~92% time reduction · Every single week</div>
+              <div class="impact-row">
+              
+                <span class="impact-icon">📈</span>
+<span class="impact-label">Efficiency Gain</span>
+<span class="impact-value">Images are organised into dated folders progressively throughout the week. On meeting day, one macro run assembles everything — formatting, naming, and all.</span>
+</div>
+
+              <div class="impact-row">
+<span class="impact-icon">🎯</span>
+<span class="impact-label">Error Reduction</span>
+<span class="impact-value">Eliminates the risk of missing an equipment entry, inconsistent formatting, or an incorrectly named file — errors that are easy to make when rebuilding a document manually under time pressure before a meeting.</span>
+</div>
+              
+              <div class="impact-row">
+<span class="impact-icon">👥</span>
+<span class="impact-label">Users &amp; Adoption</span>
+<span class="impact-value">Shared with </span>
+</div>
+              
+              <div class="impact-row">
+<span class="impact-icon">⚙️</span>
+<span class="impact-label">Tech Used</span>
+<span class="impact-value">Excel Macros (VBA), Copilot</span>
+              </div>
+              
             </div>
           </div>
         </div>
       </div>
 
-      <!-- ═══════════════════════════════════════════ TOOL 4 - Dynamo --==
+      <!-- ════ TOOL 6 ══════════════════════════════TOOL 6═════════ 
       <div class="tool-card" data-category="Dynamo Scripts" data-name="dynamo script one">
         <div class="card-header" onclick="toggleCard(this)">
-          <span class="card-number">04</span>
+          <span class="card-number">06</span>
           <div class="card-meta">
             <div class="tool-title">Dynamo Script One</div>
             <div class="badges">
               <span class="badge badge-dynamo">Dynamo Script</span>
               <span class="status-badge status-active">✅ Active</span>
             </div>
-            <div class="tool-one-liner">One-line description of what this Dynamo script automates in Revit</div>
+            <div class="tool-one-liner">This script allows users to toggle type parameters across multiple placed family instances simultaneously — directly from the Dynamo Player, without opening Edit Type for each one individually.</div>
           </div>
           <span class="expand-icon">▼</span>
         </div>
         <div class="card-body">
           <div class="section-block">
             <div class="section-label">Process Before This Tool</div>
-            <p class="section-text">Describe what had to be done manually before this script existed. Which Revit elements were involved? What made it repetitive?</p>
+            <p class="section-text">
+              Following are the steps involved in the manual method:<br>
+				<b>1. Place All Family Types in the Project</b><br>
+				Load and place all required sprinkler family types into the Revit project environment. Each type carries its own set of parameters fed through a .txt file.<br>
+				<b>2. Select a Type and Open Edit Type</b><br>
+				Click on an individual family instance and open the Edit Type dialog from the Properties panel.<br>
+				<b>3. Toggle the Parameter</b><br>
+				Locate the required graphical type parameter and toggle it on or off manually.<br>
+				<b>4. Click Apply and Close</b><br>
+				Confirm the change by clicking Apply before closing the dialog.<br>
+                <b>5. Repeat for Every Remaining Type</b><br>
+                Return to the project, select the next family type, and repeat Steps 2 through 4 — for every single type placed in the model.<br>
+
+</p>
+
           </div>
-          <div class="section-block">
+            <div class="section-block">
             <div class="section-label">Before &amp; After</div>
+			
             <div class="video-grid">
 			
-			<!-- LEFT SIDE: MANUAL METHOD --==
+			<!-- LEFT SIDE: MANUAL METHOD 
               <div class="video-block">
                 <div class="video-label before">⏱ Manual Method</div>
                 <div class="video-embed">
 					
-				<!-- ADDED VIDEO TAG BELOW --==
-					<video width="450" height ="450" controls>
+				<!-- ADDED VIDEO TAG BELOW 
+					<video width=100% height =100% controls>
 					<source src="videos/DimMM.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
@@ -912,13 +1122,13 @@
                 </div>
               </div>
 			  
-			  <!-- RIGHT SIDE: AUTOMATED METHOD --==
+			  <!-- RIGHT SIDE: AUTOMATED METHOD 
               <div class="video-block">
                 <div class="video-label after">⚡ Automated Method</div>
                 <div class="video-embed">
 					
-				<!-- ADDED VIDEO TAG BELOW --==
-					<video width="450" height ="450" controls>
+				<!-- ADDED VIDEO TAG BELOW 
+					<video width=100% height =100% controls>
 					<source src="videos/DimAM.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
@@ -927,20 +1137,43 @@
               </div>
             </div>
           </div>
-          <div class="section-block">
+            <div class="section-block">
             <div class="section-label">Implications &amp; Impact</div>
             <div class="implications">
-              <div class="time-highlight">⏱ <strong>X hours → Y minutes</strong> &nbsp;·&nbsp; ~Z% time reduction</div>
-              <div class="impact-row"><span class="impact-icon">📈</span><span class="impact-label">Efficiency Gain</span><span class="impact-value">Detail here</span></div>
-              <div class="impact-row"><span class="impact-icon">🎯</span><span class="impact-label">Error Reduction</span><span class="impact-value">Detail here</span></div>
-              <div class="impact-row"><span class="impact-icon">👥</span><span class="impact-label">Users &amp; Adoption</span><span class="impact-value">Detail here</span></div>
-              <div class="impact-row"><span class="impact-icon">💼</span><span class="impact-label">Business Value</span><span class="impact-value">Detail here</span></div>
-              <div class="impact-row"><span class="impact-icon">⚙️</span><span class="impact-label">Tech Used</span><span class="impact-value">Dynamo, Python Script Nodes</span></div>
+              <div class="time-highlight">
+                📝<strong>~99% time reduction</strong> &nbsp;&nbsp;The more family types placed — the greater the saving.
+              </div>
+              <div class="impact-row">
+                <span class="impact-icon">📈</span>
+                <span class="impact-label">Efficiency Gain</span>
+                <span class="impact-value"> All family types are selected at once inside Revit. The Dynamo Player script handles the rest — no dialog boxes, no repetition, no clicks per family. One run updates everything simultaneously.</span>
+              </div>
+              <div class="impact-row">
+                <span class="impact-icon">🎯</span>
+                <span class="impact-label">Error Reduction</span>
+                <span class="impact-value">Manual toggling across multiple types creates a real risk of missing one — especially when validating large sprinkler layouts with many variants. This script ensures every selected instance is updated uniformly, removing the chance of inconsistent parameter states going unnoticed. </span>
+              </div>
+              <!--
+			  <div class="impact-row">
+                <span class="impact-icon">👥</span>
+                <span class="impact-label">Users &amp; Adoption</span>
+                <span class="impact-value">How many people use this, how often</span>
+              </div>
+			  
+              <div class="impact-row">
+                <span class="impact-icon">💼</span>
+                <span class="impact-label">Business Value</span>
+                <span class="impact-value">Sprinkler family validation is a recurring quality check task. A script that compresses what was previously a linear per-type process into a single operation directly improves the reliability and speed of every content review cycle.</span>
+              </div>
+              <div class="impact-row">
+                <span class="impact-icon">⚙️</span>
+                <span class="impact-label">Tech Used</span>
+                <span class="impact-value">Dynamo, Dynamo Player</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-	  
       <!-- ═══════════════════════════════════════════ TOOL 5 - Plant 3D --==
       <div class="tool-card" data-category="Plant 3D" data-name="plant 3d tool one">
         <div class="card-header" onclick="toggleCard(this)">
@@ -1072,14 +1305,14 @@
           </div>
         </div>
       </div>-->
-	 
-	  <div class="card-header" onclick="toggleCard(this)">
-          <span class="card-number">Next Tool Loading...</span>
-        </div>
+	    <!-- ═══════════════════════════════════════════ TOOL 6 ends -->
+	  
 
       <!-- ═══════════════════════════════════════════ ADD MORE TOOLS BELOW -->
       <!-- Copy any tool block above, update the number, data-category, data-name, and content -->
-
+<div class="card-header" onclick="toggleCard(this)">
+          <span class="card-number">Next Tool Loading...</span>
+        </div>
     </div>
 
     <!-- No results message -->
@@ -1096,7 +1329,7 @@
     <p><strong>Justin Jolly</strong> · Revit Content Specialist</p>
     
 	<p>Have feedback or suggestions? Feel free to reach out via email at <a href="mailto:justin.jolly@victaulic.com">justin.jolly@victaulic.com</a></p>
-<p style="margin-top:8px">Last updated February 2026</p>
+<p style="margin-top:8px">Last updated May 2026</p>
 
   </footer>
 
